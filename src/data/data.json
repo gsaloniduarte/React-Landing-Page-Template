@@ -1,7 +1,7 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Transforme selfies em Fotografias Profissionais",
+    "paragraph": "Obtenha suas fotos profissionais em segundos com nosso fotógrafo de IA. Carregue sua selfie e escolha o estilo que desejar."
   },
   "About": {
     "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -132,23 +132,33 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
-      "job": "Director"
+      "name": "Viagem",
+      "job": "Procurando inspiração para sua próxima viagem? Obtenha a foto perfeita para sua próxima viagem"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
-      "job": "Senior Designer"
+      "name": "Namoro",
+      "job": "A sessão de fotos perfeita para o seu perfil de namoro. Obtenha mais combinações com uma foto perfeita."
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
-      "job": "Senior Designer"
+      "name": "Esportes",
+      "job": "Tire uma foto profissional praticando esportes. Obtenha mais seguidores e patrocinadores"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Karen Doe",
-      "job": "Project Manager"
+      "name": "Profissional",
+      "job": "O ensaio fotográfico perfeito para o seu perfil profissional. Conquiste mais clientes com uma foto perfeita."
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Casamento",
+      "job": "Inspire-se para a sua sessão fotográfica de casamento. Imagine como serão suas fotos."
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Luxo",
+      "job": "Mostre seu estilo de vida luxuoso com uma foto perfeita."
     }
   ],
   "Contact": {

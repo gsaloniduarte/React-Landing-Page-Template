@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Navigation = (props) => {
+export const Navigation = ({ isLoggedIn, onLogout }) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -28,23 +28,8 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="page-scroll">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="page-scroll">
-                Services
-              </a>
-            </li>
-            <li>
               <a href="#portfolio" className="page-scroll">
-                Gallery
+                Galeria
               </a>
             </li>
             <li>
@@ -53,8 +38,8 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
-                Team
+              <a href="#exemplos" className="page-scroll">
+                Exemplos
               </a>
             </li>
             <li>
@@ -62,6 +47,21 @@ export const Navigation = (props) => {
                 Contact
               </a>
             </li>
+            {!isLoggedIn ? (
+              <>
+                <li>
+                  <a href="#signup" className="page-scroll">
+                    Entrar
+                  </a>
+                </li>
+              </>
+            ) : (
+              <li>
+                <button onClick={onLogout} className="logout-button">
+                  Sair
+                </button>
+              </li>
+            )}
           </ul>
         </div>
       </div>

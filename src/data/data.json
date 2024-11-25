@@ -65,6 +65,444 @@
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
+  "ModelsHomem": [
+    {
+      "title": "Homem à beira da piscina",
+      "largeImage": "img/modelosHomem/poolside.jpeg",
+      "smallImage": "img/modelosHomem/poolside.jpeg",
+      "category": "Namoro",
+      "details": "Foto de perfil de um homem de sunga à beira da piscina, sugerindo uma sessão de fotos de namoro."
+    },
+    {
+      "title": "Homem de terno com cidade",
+      "largeImage": "img/modelosHomem/citySuit.jpeg",
+      "smallImage": "img/modelosHomem/citySuit.jpeg",
+      "category": "Profissional",
+      "details": "Um homem de terno com a cidade como pano de fundo parece uma foto profissional."
+    },
+    {
+      "title": "Foto de perfil moderna",
+      "largeImage": "img/modelosHomem/modernPFP.jpeg",
+      "smallImage": "img/modelosHomem/modernPFP.jpeg",
+      "category": "Namoro",
+      "details": "PFP bonito e moderno gerado por IA."
+    },
+    {
+      "title": "Tema de viagem e graffiti",
+      "largeImage": "img/modelosHomem/travelGraffiti.jpeg",
+      "smallImage": "img/modelosHomem/travelGraffiti.jpeg",
+      "category": "travel",
+      "details": "Foto de perfil com tema de viagem de um homem em frente a uma parede de graffiti."
+    },
+    {
+      "title": "Sessão de aniversário",
+      "largeImage": "img/modelosHomem/birthdayBalloons.jpeg",
+      "smallImage": "img/modelosHomem/birthdayBalloons.jpeg",
+      "category": "Namoro",
+      "details": "Sessão fotográfica de aniversário em balões coloridos, festivos ou de aniversário."
+    },
+    {
+      "title": "Luxo com terno",
+      "largeImage": "img/modelosHomem/luxurySuit.jpeg",
+      "smallImage": "img/modelosHomem/luxurySuit.jpeg",
+      "category": "Namoro",
+      "details": "Foto de perfil luxuosa de um homem de terno em frente a uma casa luxuosa."
+    },
+    {
+      "title": "Luxo com terno preto",
+      "largeImage": "img/modelosHomem/luxuryBlackSuit.jpeg",
+      "smallImage": "img/modelosHomem/luxuryBlackSuit.jpeg",
+      "category": "Namoro",
+      "details": "Foto de perfil luxuosa de um homem de terno preto em frente a uma casa luxuosa."
+    },
+    {
+      "title": "CEO profissional",
+      "largeImage": "img/modelosHomem/ceoProfessional.jpeg",
+      "smallImage": "img/modelosHomem/ceoProfessional.jpeg",
+      "category": "Profissional",
+      "details": "Uma sessão de fotos profissional de um CEO de terno, para um perfil profissional."
+    },
+    {
+      "title": "Piloto na cidade",
+      "largeImage": "img/modelosHomem/pilotCity.jpeg",
+      "smallImage": "img/modelosHomem/pilotCity.jpeg",
+      "category": "Profissional",
+      "details": "Homem com uniforme de piloto em frente a uma paisagem urbana iluminada à noite."
+    },
+    {
+      "title": "Aventura ao ar livre",
+      "largeImage": "img/modelosHomem/outdoorAdventure.jpeg",
+      "smallImage": "img/modelosHomem/outdoorAdventure.jpeg",
+      "category": "Esportes",
+      "details": "Um homem caminhando na natureza, uma aventura ao ar livre."
+    },
+    {
+      "title": "Sessão de chef",
+      "largeImage": "img/modelosHomem/chefSession.jpeg",
+      "smallImage": "img/modelosHomem/chefSession.jpeg",
+      "category": "culinary",
+      "details": "Uma sessão de fotos culinária de um homem em traje de chef."
+    },
+    {
+      "title": "Casamento na praia",
+      "largeImage": "img/modelosHomem/beachWedding.jpeg",
+      "smallImage": "img/modelosHomem/beachWedding.jpeg",
+      "category": "Namoro",
+      "details": "Um homem em traje de casamento na praia, uma foto de casamento ou de viagem de luxo."
+    },
+    {
+      "title": "Casamento no campo",
+      "largeImage": "img/modelosHomem/fieldWedding.jpeg",
+      "smallImage": "img/modelosHomem/fieldWedding.jpeg",
+      "category": "Namoro",
+      "details": "Um homem em traje de casamento no campo, uma foto de casamento ou de viagem de luxo."
+    },
+    {
+      "title": "Perfil de inverno",
+      "largeImage": "img/modelosHomem/winterProfile.jpeg",
+      "smallImage": "img/modelosHomem/winterProfile.jpeg",
+      "category": "Popular",
+      "details": "Homem com roupas de inverno com uma paisagem de neve e antenas parabólicas."
+    },
+    {
+      "title": "Foto em Londres",
+      "largeImage": "img/modelosHomem/londonTravel.jpeg",
+      "smallImage": "img/modelosHomem/londonTravel.jpeg",
+      "category": "travel",
+      "details": "Foto do perfil Travel AI Londres."
+    },
+    {
+      "title": "Selfie na Torre Eiffel",
+      "largeImage": "img/modelosHomem/eiffelSelfie.jpeg",
+      "smallImage": "img/modelosHomem/eiffelSelfie.jpeg",
+      "category": "travel",
+      "details": "Selfie de viagem da Torre Eiffel gerada por AI."
+    },
+    {
+      "title": "Fitness profissional",
+      "largeImage": "img/modelosHomem/fitnessProfile.jpeg",
+      "smallImage": "img/modelosHomem/fitnessProfile.jpeg",
+      "category": "Esportes",
+      "details": "Um homem em traje de ginástica, para perfil de fitness ou personal trainer."
+    }
+  ]
+  ,
+  "Models": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/modelos/adventure.jpeg",
+      "smallImage": "img/modelos/adventure.jpeg",
+      "category":"Esportes"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/axel-warior.jpeg",
+      "smallImage": "img/modelos/axel-warior.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/casual-dressed.jpeg",
+      "smallImage": "img/modelos/casual-dressed.jpeg",
+      "category":"Namoro"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/color-festival.jpeg",
+      "smallImage": "img/modelos/color-festival.jpeg",
+      "category":"popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/comics.jpeg",
+      "smallImage": "img/modelos/comics.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/curtain.jpeg",
+      "smallImage": "img/modelos/curtain.jpeg",
+      "category":"Namoro"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/drawing.jpeg",
+      "smallImage": "img/modelos/drawing.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/festival.jpeg",
+      "smallImage": "img/modelos/festival.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/graduating.jpeg",
+      "smallImage": "img/modelos/graduating.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/halloween.jpeg",
+      "smallImage": "img/modelos/halloween.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/halloween-forest.jpeg",
+      "smallImage": "img/modelos/halloween-forest.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/hiking.jpeg",
+      "smallImage": "img/modelos/hiking.jpeg",
+      "category":"Esportes"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/japanese.jpeg",
+      "smallImage": "img/modelos/japanese.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/lumberjack.jpeg",
+      "smallImage": "img/modelos/lumberjack.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/night-dressed.jpeg",
+      "smallImage": "img/modelos/night-dressed.jpeg",
+      "category":"Namoro"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/night-festival.jpeg",
+      "smallImage": "img/modelos/night-festival.jpeg",
+      "category":"Namoro"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/ny-turism.jpeg",
+      "smallImage": "img/modelos/ny-turism.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/pilot.jpeg",
+      "smallImage": "img/modelos/pilot.jpeg",
+      "category":"Popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/profesisonal-sunset.jpeg",
+      "smallImage": "img/modelos/profesisonal-sunset.jpeg",
+      "category":"Profissional"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/professional.jpeg",
+      "smallImage": "img/modelos/professional.jpeg",
+      "category":"Profissional"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/professiona-office.jpeg",
+      "smallImage": "img/modelos/professiona-office.jpeg",
+      "category":"Profissional"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/professiona-table.jpeg",
+      "smallImage": "img/modelos/professiona-table.jpeg",
+      "category":"Profissional"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/snow.jpeg",
+      "smallImage": "img/modelos/snow.jpeg",
+      "category":"popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/spy.jpeg",
+      "smallImage": "img/modelos/spy.jpeg",
+      "category":"popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/street-urban.jpeg",
+      "smallImage": "img/modelos/street-urban.jpeg",
+      "category":"popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/sunset-festival.jpeg",
+      "smallImage": "img/modelos/sunset-festival.jpeg",
+      "category":"popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/surfer.jpeg",
+      "smallImage": "img/modelos/surfer.jpeg",
+      "category":"Esportes"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/tailand-new-eve.jpeg",
+      "smallImage": "img/modelos/tailand-new-eve.jpeg",
+      "category":"popular"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/underwear.jpeg",
+      "smallImage": "img/modelos/underwear.jpeg",
+      "category":"Namoro"
+	},
+	{
+      "title": "Project Title",
+      "largeImage": "img/modelos/warior.jpeg",
+      "smallImage": "img/modelos/warior.jpeg",
+      "category":"Popular"
+	}
+  ],
+  "exemplos": [
+    {
+      "name": "Todos",
+      "job": "", 
+      "img": "img/exemplos/1.jpeg",
+      "arrow": "img/arrow.jpeg",
+      "thumbnailHomem": "img/modelosHomem/ceo.jpeg",
+      "images": [
+        {
+          "img": "img/exemplos/11.jpeg",
+          "largeimg": "img/exemplos/11.jpeg"
+        },
+        {
+          "img": "img/exemplos/12.jpeg",
+          "largeimg": "img/exemplos/12.jpeg"
+        },
+        {
+          "img": "img/exemplos/13.jpeg",
+          "largeimg": "img/exemplos/13.jpeg"
+        },
+        {
+          "img": "img/exemplos/14.jpeg",
+          "largeimg": "img/exemplos/14.jpeg"
+        },
+        {
+          "img": "img/exemplos/15.jpeg",
+          "largeimg": "img/exemplos/15.jpeg"
+        },
+        {
+          "img": "img/exemplos/16.jpeg",
+          "largeimg": "img/exemplos/16.jpeg"
+        },
+        {
+          "img": "img/exemplos/17.jpeg",
+          "largeimg": "img/exemplos/17.jpeg"
+        },
+        {
+          "img": "img/exemplos/18.jpeg",
+          "largeimg": "img/exemplos/18.jpeg"
+        },
+        {
+          "img": "img/exemplos/19.jpeg",
+          "largeimg": "img/exemplos/19.jpeg"
+        },
+        {
+          "img": "img/exemplos/110.jpeg",
+          "largeimg": "img/exemplos/110.jpeg"
+        }
+        
+      ]
+    },
+    {
+      "name": "Todos",
+      "job": "", 
+      "img": "img/exemplos/2.png",
+      "arrow": "img/arrow.jpeg",      
+      "thumbnailHomem": "img/modelosHomem/ceo.jpeg",
+      "images": [
+        {
+          "img": "img/exemplos/21.jpeg",
+          "largeimg": "img/exemplos/21.jpeg"
+        },
+        {
+          "img": "img/exemplos/22.jpeg",
+          "largeimg": "img/exemplos/22.jpeg"
+        },
+        {
+          "img": "img/exemplos/23.jpeg",
+          "largeimg": "img/exemplos/23.jpeg"
+        },
+        {
+          "img": "img/exemplos/24.jpeg",
+          "largeimg": "img/exemplos/24.jpeg"
+        },
+        {
+          "img": "img/exemplos/25.jpeg",
+          "largeimg": "img/exemplos/25.jpeg"
+        },
+        {
+          "img": "img/exemplos/26.jpeg",
+          "largeimg": "img/exemplos/26.jpeg"
+        },
+        {
+          "img": "img/exemplos/27.jpeg",
+          "largeimg": "img/exemplos/27.jpeg"
+        },
+        {
+          "img": "img/exemplos/28.jpeg",
+          "largeimg": "img/exemplos/28.jpeg"
+        },
+        {
+          "img": "img/exemplos/29.jpeg",
+          "largeimg": "img/exemplos/29.jpeg"
+        },
+        {
+          "img": "img/exemplos/210.jpeg",
+          "largeimg": "img/exemplos/210.jpeg"
+        }
+        
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "name": "Todos",
+      "category": "", 
+      "thumbnail": "img/modelos/ceo.jpeg",
+      "thumbnailHomem": "img/modelosHomem/ceo.jpeg"
+    },    
+    {
+      "name": "Popular",
+      "category": "Popular", 
+      "thumbnail": "img/modelos/drawing.jpeg",
+      "thumbnailHomem": "img/modelosHomem/drawing.jpeg"
+    },
+    {
+      "name": "Namoro",
+      "category": "Namoro",
+      "thumbnail": "img/modelos/casual-dressed.jpeg",
+      "thumbnailHomem": "img/modelosHomem/luxurySuit.jpeg"
+    },
+    {
+      "name": "Esportes",
+      "category": "Esportes",
+      "thumbnail": "img/modelos/hiking.jpeg",
+      "thumbnailHomem": "img/modelosHomem/hiking.jpeg"
+    },
+    {
+      "name": "Profissional",
+      "category": "Profissional",
+      "thumbnail": "img/modelos/profesisonal-sunset.jpeg",
+      "thumbnailHomem": "img/modelosHomem/ceoProfessional.jpeg"
+    }
+  ],
   "Services": [
     {
       "icon": "fa fa-wordpress",

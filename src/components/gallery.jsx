@@ -8,8 +8,7 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>Gallery</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Baixe suas imagens
           </p>
         </div>
         <div className="row">
@@ -27,7 +26,7 @@ export const Gallery = (props) => {
                     />
                   </div>
                 ))
-              : "Loading..."}
+              : "Você ainda não gerou nenhuma imagem..."}
           </div>
         </div>
       </div>

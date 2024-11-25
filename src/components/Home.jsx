@@ -7,6 +7,7 @@ import { Gallery } from "./gallery";
 import { Testimonials } from "./testimonials";
 import { Team } from "./Exemplos";
 import { Contact } from "./contact";
+import { Generate } from "./generate";
 
 export const Home = (props) => {
   const headerData = {
@@ -18,7 +19,8 @@ export const Home = (props) => {
     <div>
       {/* Seção do Cabeçalho */}
       <Header data={props.data.Header} />
-      <Gallery data={props.data.Gallery} />
+      <Generate data={props.data}  />
+      {/* <Gallery data={props.data.Gallery} /> */}
         {/* <Features data={landingPageData.Features} /> */}
         {/* <About data={landingPageData.About} /> */}
         {/* <Services data={landingPageData.Services} /> */}

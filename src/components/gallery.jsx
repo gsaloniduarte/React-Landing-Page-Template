@@ -13,6 +13,10 @@ export const Gallery = (props) => {
         </div>
         <div className="row">
           <div className="portfolio-items">
+
+
+
+            
             {props.data
               ? props.data.map((d, i) => (
                   <div

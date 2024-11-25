@@ -112,23 +112,29 @@ export const Generate = (props) => {
         {/* Display filtered images */}
         <div className="row">
           <div className="portfolio-items">
-            {filteredModels.length > 0 ? (
-              filteredModels.map((d, i) => (
-                <>
-                <button key={`${d.title}-${i}`} className="col-sm-6 col-md-2 col-lg-2 h-full "  onClick={() => addToCart(d)}>
- 
-                  <Image
-                    title={"Selecionar"}
-                    smallImage={d.smallImage}
-                  />
-                </button>
+            <div className="row-container"   >
 
-                </>
+              {filteredModels.length > 0 ? (
+                filteredModels.map((d, i) => (
+                  <>
+                  <div  key={i} className="col-6-container col-md-3-container my-2" >
+                              <button className="btn-image" onClick={() => addToCart(d)}>
+                                <div className="image-container">
+                                  <Image title="aaaa" smallImage={d.smallImage} />
+                                  <div className="overlay">
+                                    <h1 className="select-icon">Selecionar</h1>
+                                  </div>
+                                </div>
+                              </button>
+                            </div>
                 
-              ))
-            ) : (
-              <p>Sem imagens disponíveis</p>
-            )}
+
+                  </>
+                ))
+              ) : (
+                <p>Sem imagens disponíveis</p>
+              )}
+            </div>
           </div>
         </div>
 

@@ -18,6 +18,62 @@
       "Lorem ipsum dolor"
     ]
   },
+  "FAQimg":"img/FAQ.jpeg",
+  "FAQ": [
+    {
+      "pergunta": "Quanto tempo levará para tirar uma foto com IA?",
+      "resposta": "Dadas as velocidades de processamento existentes, a captura de uma foto normalmente requer aproximadamente 15 segundos."
+    },
+    {
+      "pergunta": "Quanto tempo levará para criar meu personagem de IA?",
+      "resposta": "Não treinamos nenhum personagem, então as AI Photos são criadas com apenas uma foto e os resultados são quase imediatos."
+    },
+    {
+      "pergunta": "Como minhas fotos são tratadas após o processamento?",
+      "resposta": "Após o processamento, suas fotos são armazenadas para sua comodidade de acesso e download. Você tem controle total e pode excluí-los do nosso sistema a qualquer momento."
+    },
+    {
+      "pergunta": "Eu mantenho a propriedade das minhas fotos enviadas?",
+      "resposta": "Absolutamente. Você mantém a propriedade total e recebe uma licença comercial para as fotos processadas. Respeitamos sua privacidade e usamos as fotos exclusivamente para gerar o resultado solicitado."
+    },
+    {
+      "pergunta": "Qual é o tipo de foto ideal para upload?",
+      "resposta": "Uma selfie nítida e em close funciona melhor para o nosso processo. No entanto, você pode enviar fotos de amigos ou celebridades, desde que tenha o direito de usá-las."
+    },
+    {
+      "pergunta": "Onde minhas fotos e dados são armazenados?",
+      "resposta": "Os seus dados são armazenados de forma segura nos nossos servidores privados, que estão equipados com medidas de segurança avançadas para proteger as suas informações."
+    },
+    {
+      "pergunta": "Posso excluir permanentemente meus dados?",
+      "resposta": "Sim, você tem autonomia para excluir seus dados a qualquer momento. Mediante solicitação, removeremos todos os dados associados de nossos servidores."
+    },
+    {
+      "pergunta": "O processo de pagamento é seguro?",
+      "resposta": "A segurança é a nossa principal prioridade. Usamos Stripe para processamento seguro de pagamentos e não armazenamos nenhuma informação de cartão de crédito em nossos servidores."
+    },
+    {
+      "pergunta": "Quais formatos de arquivo você aceita para enviar minha selfie?",
+      "resposta": "Suportamos os formatos de arquivo de imagem mais populares: JPG, PNG, WebP, HEIC e AVIF."
+    },
+    {
+      "pergunta": "Posso obter um reembolso?",
+      "resposta": "Claro! Por favor, verifique nossa Política de Reembolso no rodapé para mais detalhes."
+    },
+    {
+      "pergunta": "Qual é o tempo de resposta para o processamento das fotos?",
+      "resposta": "Normalmente, o processamento leva menos de um minuto. Em casos raros, pode demorar até 5 minutos."
+    },
+    {
+      "pergunta": "As fotos geradas pela IA são realistas?",
+      "resposta": "Nossa tecnologia de IA foi projetada para produzir fotos altamente realistas. Porém, o resultado final pode depender da qualidade e natureza da foto enviada."
+    }
+  ],
+  "Planos":[
+    { "id": 1, "title": "10 Fotos", "price": 15, "description": "Ideal para poucas fotos" },
+    { "id": 2, "title": "30 Fotos", "price": 25, "description": "Popular para redes sociais", "highlighted": true },
+    { "id": 3, "title": "100 Fotos", "price": 45, "description": "Perfeito para grandes projetos" }
+  ],
   "Gallery": [
     {
       "title": "Project Title",

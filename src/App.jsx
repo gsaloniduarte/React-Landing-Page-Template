@@ -23,6 +23,13 @@ import "./App.css";
 import { LoggedNavigation } from "./components/loggednavigation";
 import { Generate } from "./components/generate";
 import { GeneratePage } from "./components/generatePage";
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements,useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
+
+
+// Chave pública do Stripe
+const stripePromise = loadStripe('pk_test_51QKOivJo2zcqfF2q4Vdu1qGrTFiaIQh5YaDNR2MUdNmsnoqlMYAroqt4yZ1ullMRFpzLPQxayRUQQOCIM718xTh700SnhCY6rO');  // Substitua pela sua chave pública
+
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -53,10 +60,12 @@ const App = () => {
           <Route path="/complete-signup" element={<CompleteSignUp />} />
           <Route path="/minhas-imagens" element={isLoggedIn ? <Gallery /> : <Navigate to="/login" />} />
           <Route path="/gerar-imagens" element={<GeneratePage data={landingPageData}  />} />
-          <Route path="/pagamento" element={isLoggedIn ? <Payment /> : <Navigate to="/login" />} />
+          {/* <Route path="/pagamento" element={<Payment />}  /> */}
+          <Route path="/payment/:planId" element={    <Elements stripe={stripePromise}><Payment /></Elements>} />
+          {/* <Route path="/pagamento" element={isLoggedIn ? <Payment /> : <Navigate to="/login" />} /> */}
         </Routes>
         {/* <Gallery /> */}
-        
+
         {/* <Header data={landingPageData.Header} /> */}
         {/* {!isLoggedIn ? (
           <>

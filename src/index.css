@@ -106,6 +106,74 @@ code {
 }
 
 
+
+/* FAQ ---------------------------------------------------------------------------------- */
+
+.faq-box {
+  text-align: center;
+  align-items: center;
+  padding: 100px;
+}
+.faq-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.faq-content {
+  display: flex;
+  width: 100%;
+}
+
+.faq-questions {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #d9d9d9;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #f9f9f9;
+  border-left: 3px solid #007bff;
+  border-radius: 0 5px 5px 5px;
+  font-size: 14px;
+}
+
+.faq-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-image-content {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 /* Shopping Cart Container ---------------------------------------------------------------------------------- */
 /* Style for the shopping cart container */
 .shopping-cart {
@@ -320,6 +388,11 @@ button:hover img {
   max-width: 20%;
 }
 
+.col-md-3-container {
+  flex: 0 0 16.666%; /* Ajusta a largura de 2 colunas no layout bootstrap */
+  max-width: 16.666%;
+}
+
 /* Container da imagem com hover */
 .image-container {
   position: relative;
@@ -367,7 +440,17 @@ button:hover img {
   border-radius: 50%; /* Arredondamento total */
 
 }
+.overlay .select-icon {
+  font-size: 2rem; /* Ajuste conforme necessário */
+  color: #fff; /* Ajuste a cor, se necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;;
+  width: 50px; /* Tamanho total do container */
+  height: 50px; /* Tamanho total do container */
 
+}
 
 /* Modal da imagem expandida */
 .expanded-image-container {
@@ -422,4 +505,172 @@ button:hover img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+
+/* PaymentComponent ========================================================== */
+.payment-component {
+  text-align: center;
+  margin: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.discount-banner {
+  background-color: #f8d7da;
+  color: #842029;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: blink 1s infinite; /* Animação de piscar */
+}
+.discount-banner p{
+  font-size: 2rem;
+}
+.client-banner {
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.client-banner p{
+  font-size: 3rem;
+}
+
+.garantia-banner {
+  display: flex;
+  justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 100;
+  text-align: center; /* Centraliza o texto */
+}
+
+.garantia-banner p {
+  font-size: 2.5rem;
+}
+
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.plan-card {
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+.plan-card.highlighted {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+}
+
+.plan-title {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  color: #007bff;
+
+}
+
+.plan-description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.plan-price {
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #007bff;
+
+}
+ 
+.original-price {
+  text-decoration: line-through;
+  font-size: 2.25rem;
+  font-weight: normal;
+  color: #888;
+  margin-right: 10px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.feature-icon {
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.buy-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+
+}
+
+.buy-button:hover {
+  background-color: #0056b3;
+}
+.plan-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-transform: uppercase;
 }

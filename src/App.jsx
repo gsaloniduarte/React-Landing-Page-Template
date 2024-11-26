@@ -15,6 +15,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import Payment from "./components/Payment";
 import Home from "./components/Home";
 import CompleteSignUp from "./components/CompleteSignUp";
+import { AuthContextProvider } from './context/AuthContext';
 
 import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
@@ -25,7 +26,10 @@ import { Generate } from "./components/generate";
 import { GeneratePage } from "./components/generatePage";
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements,useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
-
+import PaymentPage from "./components/page";
+import AccountPage from "./account/AccountPage";
+import SuccessPage from "./account/SuccessPage";
+import ResetPassword from "./components/ResetPassword";
 
 // Chave pública do Stripe
 const stripePromise = loadStripe('pk_test_51QKOivJo2zcqfF2q4Vdu1qGrTFiaIQh5YaDNR2MUdNmsnoqlMYAroqt4yZ1ullMRFpzLPQxayRUQQOCIM718xTh700SnhCY6rO');  // Substitua pela sua chave pública
@@ -39,6 +43,7 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+
   const handleLogout = async () => {
     await signOut(auth);
     setIsLoggedIn(false);
@@ -50,39 +55,51 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
-      <div>
-        <Navigation  setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>
-        <Routes>
-          <Route path="/" element={<Home  data={landingPageData}  />} />
-          <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/signup" element={<SignUp setIsLogged={setIsLoggedIn} />} />
-          <Route path="/complete-signup" element={<CompleteSignUp />} />
-          <Route path="/minhas-imagens" element={isLoggedIn ? <Gallery /> : <Navigate to="/login" />} />
-          <Route path="/gerar-imagens" element={<GeneratePage data={landingPageData}  />} />
-          {/* <Route path="/pagamento" element={<Payment />}  /> */}
-          <Route path="/payment/:planId" element={    <Elements stripe={stripePromise}><Payment /></Elements>} />
-          {/* <Route path="/pagamento" element={isLoggedIn ? <Payment /> : <Navigate to="/login" />} /> */}
-        </Routes>
-        {/* <Gallery /> */}
+    <>
+    <AuthContextProvider>
 
-        {/* <Header data={landingPageData.Header} /> */}
-        {/* {!isLoggedIn ? (
-          <>
-            <Login />
-          </>
-        ) : (
-          <Gallery />
-        )} */}
+          
+      <Router>
+        <div>
+          <Navigation  setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>
+          <Routes>
+            <Route path="/" element={<Home  data={landingPageData}  />} />
+            <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/signup" element={<SignUp setIsLogged={setIsLoggedIn} />} />
+            <Route path="/reset-password" element={<ResetPassword setIsLogged={setIsLoggedIn} />} />
+            <Route path="/complete-signup" element={<CompleteSignUp />} />
+            <Route path="/minhas-imagens" element={isLoggedIn ? <Gallery /> : <Navigate to="/login" />} />
+            <Route path="/gerar-imagens" element={<GeneratePage data={landingPageData}  />} />
+            {/* <Route path="/pagamento" element={<Payment />}  /> */}
+            <Route path="/payment/:planId" element={    <Elements stripe={stripePromise}><Payment /></Elements>} />
+            <Route path="/payment1/:planId" element={    <PaymentPage/>} />
+            <Route path="/account" element={    <AccountPage/>} />
+            <Route path="/success" element={    <SuccessPage/>} />
+            {/* <Route path="/pagamento" element={isLoggedIn ? <Payment /> : <Navigate to="/login" />} /> */}
+          </Routes>
+          {/* <Gallery /> */}
 
-      </div>
+          {/* <Header data={landingPageData.Header} /> */}
+          {/* {!isLoggedIn ? (
+            <>
+              <Login />
+            </>
+          ) : (
+            <Gallery />
+          )} */}
+
+        </div>
 
 
 
-    </Router>
+      </Router>
 
 
+   
+    </AuthContextProvider>
 
+
+</>
   );
 };
 

@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 const stripe = require('stripe')('your-secret-key');  // Substitua pela sua chave secreta do Stripe
 const cors = require('cors');
 const app = express();
@@ -44,3 +44,4 @@ const PORT = 4000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+ */

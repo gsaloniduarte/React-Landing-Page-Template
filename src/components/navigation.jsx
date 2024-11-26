@@ -1,6 +1,28 @@
 import React from "react";
+import { UserAuth } from "../context/AuthContext";
+import { auth } from '../firebaseConfig';
+import { useNavigate } from "react-router-dom";
+
 
 export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
+  const navigate = useNavigate();
+  const {  user,app } = UserAuth();
+  console.log( user)
+  if (user?.uid){
+      setIsLoggedIn(true)
+  }
+
+  const signOut = () => {
+    auth.signOut();
+    setIsLoggedIn(false)
+    navigate("/");
+  };
+
+  const signIn = () => {
+    auth.signOut();
+    navigate("/login");
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -20,13 +42,7 @@ export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
           <a className="navbar-brand page-scroll" href="/">
             Estúdio de Fotos
           </a>{" "}
-          <>
-          {isLoggedIn ? (
-            <button onClick={() => setIsLoggedIn(false)}>Log Out</button>
-          ) : (
-            <button onClick={() => setIsLoggedIn(true)}>Log In</button>
-          )}
-          </>
+
         </div>
 
         <div
@@ -37,9 +53,12 @@ export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
             {!isLoggedIn ? (
               <>
                 <li>
-                  <a href="/signup" className="page-scroll">
-                    Entrar
+                  <a  className="page-scroll">
+                    <button onClick={signIn}  >
+                      Entrar
+                    </button>
                   </a> 
+                  
                 </li>
               </>
             ) : (
@@ -60,7 +79,7 @@ export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
                   </a>
                 </li>
                 <li>
-                  <button onClick={() => setIsLoggedIn(false)} className="logout-button">
+                  <button onClick={signOut} className="logout-button">
                     Sair
                   </button>
                 </li>

@@ -4,7 +4,7 @@ import { signInWithPopup, sendSignInLinkToEmail } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom"; // Importe useNavigate
 import { Google } from "@mui/icons-material";
 
-const SignUp = ({ setIsLogged }) => {
+const SignUp = (props) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
@@ -36,7 +36,8 @@ const SignUp = ({ setIsLogged }) => {
       // Verifica se o usuário foi autenticado com sucesso
       if (user) {
         // Atualiza o estado de login para indicar que o usuário está logado
-        setIsLogged(true);
+        props.setIsLoggedIn(true)
+
 
         // Redireciona para a página de 'minhas-imagens'
         navigate("/minhas-imagens");
@@ -86,10 +87,6 @@ const SignUp = ({ setIsLogged }) => {
         {error && <p>{error}</p>}
          </div>       
  
-
-        <div className="section-access">
-          <Link to="/reset-password" className="text-blue-900 hover:text-gray-200 transition duration-150 ease-in-out">Esqueceu a senha?</Link>
-        </div>
         <div className="section-access">
           <div className="w-full px-3">
             <button onClick={handleSignUpWithEmail} className="access-button">Enviar link de confirmação</button>

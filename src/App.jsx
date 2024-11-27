@@ -57,24 +57,22 @@ const App = () => {
   return (
     <>
     <AuthContextProvider>
-
-          
       <Router>
         <div>
           <Navigation  setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn}/>
           <Routes>
             <Route path="/" element={<Home  data={landingPageData}  />} />
             <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/signup" element={<SignUp setIsLogged={setIsLoggedIn} />} />
-            <Route path="/reset-password" element={<ResetPassword setIsLogged={setIsLoggedIn} />} />
+            <Route path="/signup" element={<SignUp setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/reset-password" element={<ResetPassword  />} />
             <Route path="/complete-signup" element={<CompleteSignUp />} />
             <Route path="/minhas-imagens" element={isLoggedIn ? <Gallery /> : <Navigate to="/login" />} />
             <Route path="/gerar-imagens" element={<GeneratePage data={landingPageData}  />} />
             {/* <Route path="/pagamento" element={<Payment />}  /> */}
             <Route path="/payment/:planId" element={    <Elements stripe={stripePromise}><Payment /></Elements>} />
             <Route path="/payment1/:planId" element={    <PaymentPage/>} />
-            <Route path="/account" element={    <AccountPage/>} />
-            <Route path="/success" element={    <SuccessPage/>} />
+            <Route path="/account" element={    <AccountPage setIsLoggedIn={setIsLoggedIn}/>} />
+            {/* <Route path="/success" element={    <SuccessPage/>} /> */}
             {/* <Route path="/pagamento" element={isLoggedIn ? <Payment /> : <Navigate to="/login" />} /> */}
           </Routes>
           {/* <Gallery /> */}

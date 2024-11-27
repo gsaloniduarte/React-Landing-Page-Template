@@ -40,12 +40,9 @@ function ResetPassword() {
           <h2 className="access-title">Esqueceu a senha?</h2>  
           <p  >Enviaremos um e-mail com sua nova senha.</p>
         </div>
- 
-        
         <div className="section-access">
           <input id="email" type="email" className="access-input" placeholder="Seu e-mail" onChange={(event) => {setLoginEmail(event.target.value);}} required />
         </div>       
- 
  
         <div className="section-access">
           <div className="w-full px-3">
@@ -55,10 +52,6 @@ function ResetPassword() {
       <div className="section-access">
         <Link to="/login" className="access-button">Cancelar</Link>
       </div>
-
-       
-
-
         </div>
       </div>
     </div>

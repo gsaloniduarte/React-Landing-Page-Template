@@ -13,7 +13,7 @@ import { auth } from '../firebaseConfig';
 import { useState,useEffect } from "react";
 import getPremiumStatus from "./getPremiumStatus";
 
-const AccountPage = () => {
+const AccountPage = (props) => {
   const {  user,app } = UserAuth();
   console.log( user)
   const navigate = useNavigate();
@@ -86,6 +86,7 @@ const AccountPage = () => {
   };
 
   const signOut = () => {
+    props.setIsLoggedIn(false)
     auth.signOut();
     navigate("/");
   };

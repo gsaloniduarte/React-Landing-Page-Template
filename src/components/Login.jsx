@@ -11,13 +11,13 @@ import { Google } from '@mui/icons-material';
 
 
 
-const Login = () => {
+const Login = (props) => {
   const provider = new GoogleAuthProvider();
 
   const [loginEmail, setLoginEmail] = useState("");
   const [loginPassword, setLoginPassword] = useState("");
 
-  const { googleSignIn, commonSignIn, user ,signInWithPopup} = UserAuth();
+  const { googleSignIn, commonSignIn, user} = UserAuth();
   const navigate = useNavigate();
 
   const handleCommonSignIn = async () => {
@@ -31,29 +31,29 @@ const Login = () => {
 
   useEffect(() => {
     if (user != null) {
-      navigate('/account');
+      props.setIsLoggedIn(true)
+      navigate("/minhas-imagens");
     }
   }, [user]);
 
 
-  const goToAccount = () => {
-    // Substituímos o roteamento do Next.js por redirecionamento direto
-    window.location.href = "/account";
-  };
-  
   const signIn = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
 
-      if (user) {
+      /* if (user) {
         goToAccount();
-      }
+      } */
     } catch (error) {
       console.error("Error during sign-in:", error);
     }
   };
 
+  /* const goToAccount = () => {
+    // Substituímos o roteamento do Next.js por redirecionamento direto
+    window.location.href = "/account";
+  }; */
 
 
   return (
@@ -66,6 +66,7 @@ const Login = () => {
               <h2 className="access-title">Login</h2>  
             </div>
             <div className="section-access">
+              
               <button onClick={signIn} className="access-button" >
                 <div className='access-banner' >
                   <Google  style={{ fontSize: '30px', margin:'10px' }} />

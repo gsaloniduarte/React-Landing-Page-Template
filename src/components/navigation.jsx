@@ -1,27 +1,32 @@
-import React from "react";
-import { UserAuth } from "../context/AuthContext";
-import { auth } from '../firebaseConfig';
+import React, { useState, useEffect } from "react";
+import { auth } from "../firebaseConfig";
 import { useNavigate } from "react-router-dom";
 
-
-export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
+export const Navigation = ({ isLoggedIn, setIsLoggedIn }) => {
+  const [loading, setLoading] = useState(true); // Estado de carregamento
   const navigate = useNavigate();
-  const {  user,app } = UserAuth();
-  console.log( user)
-  if (user?.uid){
-      setIsLoggedIn(true)
-  }
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setIsLoggedIn(!!user); // Define true se o usuário existir, senão false
+      setLoading(false); // Define o carregamento como concluído
+    });
+
+    return () => unsubscribe(); // Limpa o listener ao desmontar
+  }, [setIsLoggedIn]);
 
   const signOut = () => {
     auth.signOut();
-    setIsLoggedIn(false)
     navigate("/");
   };
 
   const signIn = () => {
-    auth.signOut();
     navigate("/login");
   };
+
+  if (loading) {
+    return null; // Evita renderizar enquanto o estado de autenticação está sendo determinado
+  }
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -42,23 +47,19 @@ export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
           <a className="navbar-brand page-scroll" href="/">
             Estúdio de Fotos
           </a>{" "}
-
         </div>
 
         <div
           className="collapse navbar-collapse"
           id="bs-example-navbar-collapse-1"
         >
-          <ul className="nav navbar-nav navbar-right">            
+          <ul className="nav navbar-nav navbar-right">
             {!isLoggedIn ? (
               <>
                 <li>
-                  <a  className="page-scroll">
-                    <button onClick={signIn}  >
-                      Entrar
-                    </button>
-                  </a> 
-                  
+                  <a className="page-scroll">
+                    <button onClick={signIn}>Entrar</button>
+                  </a>
                 </li>
               </>
             ) : (
@@ -79,12 +80,11 @@ export const Navigation = ({ isLoggedIn, setIsLoggedIn, onLogout }) => {
                   </a>
                 </li>
                 <li>
-                  <button onClick={signOut} className="logout-button">
-                    Sair
-                  </button>
+                  <a className="page-scroll">
+                    <button onClick={signOut}>Sair</button>
+                  </a>
                 </li>
               </>
-              
             )}
           </ul>
         </div>
